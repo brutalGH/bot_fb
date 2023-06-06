@@ -976,7 +976,7 @@ def jadwall():
 					for user in target:
 						solat = ['EROR','SUBUH','DUHA','DZUHUR','ASHAR','MAGRIB','ISYA']
 						urll = 'https://mbasic.facebook.com'+user.split('|')[0];nama = user.split('|')[1]
-						pesan = f'HI, {nama}\nSekarang sudah memasuki waktu Sholat {solat[len(pul)]} untuk daerah Jakarta dan sekitarnya.\n Waktu Sekarang : {pukul}\n Waktu sholat   : {jadwal}\n\nPesan by BOT brutalID'
+						pesan = f'HI, {nama}\nSekarang sudah memasuki waktu Sholat {solat[len(pul)]} untuk daerah Jakarta dan sekitarnya.\n\n Waktu Sekarang : {pukul}\n Waktu sholat   : {jadwal}\n\nPesan by BOT brutalID'
 						send_pesan(urll,pesan,nama)
 					time.sleep(60)
 				except:
